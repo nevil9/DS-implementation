@@ -4,9 +4,15 @@
 int top = -1;
 int _array[size];
 void push(int v){
-  _array[++top] = v;
+ if(top>9){
+ printf("Stack full\n");
+ }
+   _array[++top] = v;
 }
 void pop(){
+ if(top==-1){
+  printf("Stack is empty\n"); 
+ }
   top--;
 }
 int peek(){
