@@ -10,9 +10,7 @@ void push(int v){
    _array[++top] = v;
 }
 void pop(){
- if(top==-1){
-  printf("Stack is empty\n"); 
- }
+isEmpty()
   top--;
 }
 int peek(){
